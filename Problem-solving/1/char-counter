@@ -1,0 +1,22 @@
+def count_characters(input_string):
+    letter_count = 0
+    digit_count = 0
+    special_character_count = 0
+
+    for char in input_string:
+        if char.isalpha():
+            letter_count += 1
+        elif char.isdigit():
+            digit_count += 1
+        else:
+            special_character_count += 1
+
+    return letter_count, digit_count, special_character_count
+
+input_string =eg! 123"
+
+letter_count, digit_count, special_character_count = count_characters(input_string)
+
+print("تعداد کاراکترهای حروف:", letter_count)
+print("تعداد اعداد:", digit_count)
+print("تعداد کاراکترهای خاص:", special_character_count)
